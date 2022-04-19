@@ -1,0 +1,20 @@
+{
+  "name": "m2-p2-pokedex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e js,html,ejs,css"
+  },
+  "keywords": [],
+  "author": "Kleiton Lima",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
+}
