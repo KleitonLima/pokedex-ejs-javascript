@@ -24,7 +24,7 @@ header img#logo {
 }
 main {
   background-image: url("https://w0.peakpx.com/wallpaper/240/955/HD-wallpaper-pokeballs-3d-3d-ball-pokeball-pokemon.jpg");
-  background-size: auto;
+  background-size: cover;
   min-height: 70%;
 }
 section#cards {
