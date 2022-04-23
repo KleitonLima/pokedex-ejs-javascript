@@ -11,14 +11,16 @@
     <%- include("./partials/header.ejs") %>
     <main>
       <section id="cards">
-        <% pokedex.forEach(pokemon => { %>
-        <div id="card">
-          <div class="text_card"><%= pokemon.nome %></div>
-          <div id="card_img">
-            <img id="img_pokemon" src="<%= pokemon.imagem %>" alt="" />
-          </div>
-          <div class="text_card"><%= pokemon.tipo %></div>
-        </div>
+        <% pokedex.forEach(element=> { %>
+        <a href="/detalhes/<%= element.id %> ">
+          <article id="card">
+            <div class="text_card"><%= element.nome %></div>
+            <div id="card_img">
+              <img id="img_pokemon" src="<%= element.imagem %>" alt="" />
+            </div>
+            <div class="text_card"><%= element.tipo %></div>
+          </article>
+        </a>
         <% }) %>
       </section>
     </main>

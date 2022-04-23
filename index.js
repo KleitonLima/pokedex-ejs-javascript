@@ -1,7 +1,6 @@
 // const express = require(`express`); - Forma obsoleta de fazer importação
 
 import express from "express";
-import { url } from "inspector";
 import path from "path";
 
 const __dirname = path.resolve(path.dirname(""));
@@ -19,7 +18,7 @@ app.listen(port, () => {
 
 let pokedex = [
   {
-    numero: "202",
+    id: 1,
     nome: "Wobbuffet ",
     tipo: "Psíquico",
     imagem: "https://1.bp.blogspot.com/-sYQjDe0MPh0/XyI3dNxPvpI/AAAAAAACbF4/9JIwGxIv_GE9AePltscsf-sB4aDtjnmZwCLcBGAsYHQ/w205-h205/poke_capture_0202_000_md_n_00000000_f_n.png",
@@ -30,7 +29,7 @@ let pokedex = [
     habilidade: "Marca de sombra",
   },
   {
-    numero: "137",
+    id: 2,
     nome: "Porygon",
     tipo: "Normal",
     imagem: "https://www.pngkit.com/png/full/62-622952_porygon-2-used-sharpen-pokemon-porygon.png",
@@ -41,7 +40,7 @@ let pokedex = [
     habilidade: "Vestígio e Download",
   },
   {
-    numero: "172",
+    id: 3,
     nome: "Pichu",
     tipo: "Elétrico",
     imagem: "https://i.pinimg.com/originals/21/ab/b7/21abb715ae7ec44d98a5ef8355807719.png",
@@ -52,7 +51,7 @@ let pokedex = [
     habilidade: "Estático",
   },
   {
-    numero: "335",
+    id: 4,
     nome: "Zangoose",
     tipo: "Normal",
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/335.png",
