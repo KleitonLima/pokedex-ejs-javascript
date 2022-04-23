@@ -14,12 +14,50 @@ body {
 }
 header {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 25%;
+  height: 30%;
   background-image: linear-gradient(#ca2f14, black, #d6d9d5);
 }
 header img#logo {
+  height: 100%;
+}
+@media (max-width: 832px) {
+  header img#logo {
+    height: 50%;
+  }
+}
+@media (max-width: 500px) {
+  header img#logo {
+    height: 30%;
+  }
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+header a {
   height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav li {
+  font-size: x-large;
+  padding-bottom: 6px;
+}
+header nav li:hover {
+  transform: scale(1.05);
+  color: #ca2f14;
 }
 main {
   background-image: url("https://w0.peakpx.com/wallpaper/240/955/HD-wallpaper-pokeballs-3d-3d-ball-pokeball-pokemon.jpg");
