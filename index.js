@@ -69,8 +69,14 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/detalhes", (req, res) => {
-  res.render("detalhes.ejs");
+app.get("/detalhes/:id", (req, res) => {
+  let pokedex2 = [];
+  pokedex.filter((element) => {
+    if (element.id == req.params.id) {
+      pokedex2.push(element);
+    }
+  });
+  res.render("detalhes.ejs", { pokedex2 });
 });
 
 app.get("/cadastro", (req, res) => {

@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico" />
     <title>Pokédex - Cadastro</title>
   </head>
   <body>
     <%- include('./partials/header.ejs') %>
-    <main></main>
-    <%- include('./partials/footer.ejs') %> 
+    <main>
+      <form method="post" action="/cadastro">
+        <fieldset id="principal">
+          <legend>Cadastre seu Pokémon</legend>
+          <fieldset>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" />
+          </fieldset>
+          <fieldset>
+            <label for="tipo">Tipo</label>
+            <input type="text" name="tipo" />
+          </fieldset>
+          <fieldset>
+            <label for="imagem">Link da imagem</label>
+            <input type="url" name="imagem" />
+          </fieldset>
+          <fieldset>
+            <label for="descricao">Descreva seu Pokémon</label>
+            <input type="text" name="descricao" />
+          </fieldset>
+          <fieldset>
+            <label for="altura">Altura(em metros)</label>
+            <input type="text" name="altura" />
+          </fieldset>
+          <fieldset>
+            <label for="peso">Peso(em kg)</label>
+            <input type="text" name="peso" />
+          </fieldset>
+          <fieldset>
+            <label for="categoria">Categoria</label>
+            <input type="text" name="categoria" />
+          </fieldset>
+          <fieldset>
+            <label for="habilidade">Habilidade(s)</label>
+            <input type="text" name="habilidade" />
+          </fieldset>
+          <button type="submit">Cadastrar</button>
+        </fieldset>
+      </form>
+    </main>
+    <%- include('./partials/footer.ejs') %>
   </body>
 </html>

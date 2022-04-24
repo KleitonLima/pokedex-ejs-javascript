@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico" />
     <title>Pokédex - Detalhes</title>
   </head>
   <body>
-    <%- include('./partials/header.ejs') %>
-    <main></main>
-    <%- include('./partials/footer.ejs') %> 
+    <%- include("./partials/header.ejs") %>
+    <main>
+        <%= pokedex2[0].nome %>
+    </main>
+    <%- include("./partials/footer.ejs") %>
   </body>
 </html>
