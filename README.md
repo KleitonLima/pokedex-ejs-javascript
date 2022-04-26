@@ -7,4 +7,4 @@ Uma Pokédex online, onde é possível acessar e cadastrar Pokémons, conforme s
 ### Stacks
 Para esse projeto foram usadas as seguintes ferramentas:
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/80px-Unofficial_JavaScript_logo_2.svg.png)
