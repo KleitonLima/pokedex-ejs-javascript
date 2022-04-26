@@ -125,6 +125,10 @@ fieldset {
   align-items: center;
   border: none;
 }
+legend {
+  font-size: xx-large;
+  text-shadow: 0 0 5px white;
+}
 label {
   font-size: x-large;
   text-shadow: 0 0 5px white;
@@ -155,6 +159,17 @@ thead th {
   width: 500px;
   background-color: black;
   color: #ca2f14;
+}
+input {
+  font-size: larger;
+  width: 250px;
+  height: 30px;
+}
+button {
+  font-size: large;
+  width: 150px;
+  height: 30px;
+  margin: 30px;
 }
 footer {
   height: 10%;
