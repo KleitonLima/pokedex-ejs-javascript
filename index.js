@@ -7,6 +7,9 @@ const __dirname = path.resolve(path.dirname(""));
 
 const app = express();
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -70,15 +73,22 @@ app.get("/", (req, res) => {
 });
 
 app.get("/detalhes/:id", (req, res) => {
-  let pokedex2 = [];
+  let pokemon;
   pokedex.filter((element) => {
     if (element.id == req.params.id) {
-      pokedex2.push(element);
+      pokemon = element;
     }
   });
-  res.render("detalhes.ejs", { pokedex2 });
+  res.render("detalhes.ejs", { pokemon });
 });
 
 app.get("/cadastro", (req, res) => {
   res.render("cadastro.ejs");
+});
+
+app.post("/cadastro", (req, res) => {
+  let i = pokedex[pokedex.length - 1].id + 1;
+  const { nome, tipo, imagem, descricao, altura, peso, categoria, habilidade } = req.body;
+  pokedex.push({ id: i, nome, tipo, imagem, descricao, altura, peso, categoria, habilidade });
+  res.redirect("/");
 });

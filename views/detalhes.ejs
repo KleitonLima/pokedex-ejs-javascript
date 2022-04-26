@@ -11,7 +11,41 @@
   <body>
     <%- include("./partials/header.ejs") %>
     <main>
-        <%= pokedex2[0].nome %>
+      <section id="detalhes">
+        <h1><%= pokemon.nome %></h1>
+        <img id="img_detalhes" src="<%=pokemon.imagem%>" alt="" />
+        <table>
+          <thead>
+            <th colspan="2">Detalhes</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Descrição</td>
+              <td><%= pokemon.descricao %></td>
+            </tr>
+            <tr>
+              <td>Tipo</td>
+              <td><%= pokemon.tipo %></td>
+            </tr>
+            <tr>
+              <td>Altura</td>
+              <td><%= pokemon.altura %>m</td>
+            </tr>
+            <tr>
+              <td>Peso</td>
+              <td><%= pokemon.peso %>kg</td>
+            </tr>
+            <tr>
+              <td>Categoria</td>
+              <td><%= pokemon.categoria %></td>
+            </tr>
+            <tr>
+              <td>Habilidade</td>
+              <td><%= pokemon.habilidade %></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <%- include("./partials/footer.ejs") %>
   </body>
