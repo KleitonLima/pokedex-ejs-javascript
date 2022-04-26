@@ -6,6 +6,7 @@ Uma Pokédex online, onde é possível acessar e cadastrar Pokémons, conforme s
 
 ### Stacks
 Para esse projeto foram usadas as seguintes ferramentas:
+
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
     <g>
