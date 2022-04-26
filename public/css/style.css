@@ -129,13 +129,17 @@ label {
   font-size: x-large;
   text-shadow: 0 0 5px white;
 }
-img#img_detalhes {
-  width: 30%;
-}
 section#detalhes {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+h1#nome_detalhes {
+  font-size: 50px;
+  text-shadow: 0 0 5px white;
+}
+img#img_detalhes {
+  width: 30%;
 }
 table {
   width: 500px;

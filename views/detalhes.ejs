@@ -12,7 +12,7 @@
     <%- include("./partials/header.ejs") %>
     <main>
       <section id="detalhes">
-        <h1><%= pokemon.nome %></h1>
+        <h1 id="nome_detalhes"><%= pokemon.nome %></h1>
         <img id="img_detalhes" src="<%=pokemon.imagem%>" alt="" />
         <table>
           <thead>
@@ -29,11 +29,11 @@
             </tr>
             <tr>
               <td>Altura</td>
-              <td><%= pokemon.altura %>m</td>
+              <td><%= pokemon.altura %>cm</td>
             </tr>
             <tr>
               <td>Peso</td>
-              <td><%= pokemon.peso %>kg</td>
+              <td><%= pokemon.peso %>g</td>
             </tr>
             <tr>
               <td>Categoria</td>
