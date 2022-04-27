@@ -1,5 +1,5 @@
 // const express = require(`express`); - Forma obsoleta de fazer importação
-
+import dotenv from "dotenv"
 import express from "express";
 import path from "path";
 
@@ -13,7 +13,7 @@ app.use(express.json());
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-const port = 3232;
+const port = process.env.PORT || 3232;
 
 app.listen(port, () => {
   console.log(`Rodando na porta ${port}`);
