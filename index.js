@@ -13,7 +13,7 @@ app.use(express.json());
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-const port = 3232 || "https://mysterious-lake-75675.herokuapp.com/";
+const port = 3232 || "https://pokedex-m2-p2.herokuapp.com/";
 
 app.listen(port, () => {
   console.log(`Rodando na porta ${port}`);
